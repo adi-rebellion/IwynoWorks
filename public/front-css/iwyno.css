@@ -1,0 +1,41 @@
+.text-primary
+{
+    color: #b94600 !important;
+}
+
+.btn-primary
+{
+    background-color: #b94600 !important;
+    color: white !important;
+}
+
+a{
+    color: #b94600 !important;
+}
+
+.iwyno-brown
+{
+    background-color: #4D2D19 !important;
+}
+
+.iwyno-orange
+{
+    background-color: #c55a11 !important;
+
+}
+
+.iwyno-shine-orange
+{
+    background-color: #b94600 !important;
+
+}
+
+.bg-body-extra-light {
+    background-color: red!important;
+}
+
+.bg-iwyno
+{
+    background: rgb(89,89,89);
+background: linear-gradient(90deg, rgba(89,89,89,1) 9%, rgba(197,90,29,1) 67%, rgba(254,254,254,1) 92%);
+}
