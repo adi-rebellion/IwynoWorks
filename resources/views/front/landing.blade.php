@@ -22,7 +22,7 @@
       <div class="bg-body-extra-light">
         <div class="content content-full text-center overflow-hidden">
           <div class="py-7">
-            <a class=" mb-2 py-3 px-4" href="https://1.envato.market/95j">
+            <a class=" mb-2 py-3 px-4" href="#">
               <img class="img-fluid options-item" src="{{ asset('public/logo/iwyno.png') }}" alt="Dashboard Default" width="300" height="300">
         
             </a>  
@@ -75,7 +75,7 @@
               <div class="w-100 py-4">
                 <div class="d-inline-block bg-body-extra-light rounded p-1 mb-4">
                   <div class="d-inline-block iwyno-brown rounded p-4">
-                    <img src="animation/inno.gif"/>
+                    <img src="{{ asset('public/animation/inno.gif') }}"/>
                   </div>
                 </div>
                 <h3 class="h4 fw-bold mb-1">
@@ -90,7 +90,7 @@
               <div class="w-100 py-4">
                 <div class="d-inline-block bg-body-extra-light rounded p-1 mb-4">
                   <div class="d-inline-block iwyno-orange  rounded p-4">
-                    <img src="animation/expert.gif" style="height: 190px;"/>
+                    <img src="{{ asset('public/animation/expert.gif') }}" style="height: 190px;"/>
                   </div>
                 </div>
                 <h3 class="h4 fw-bold mb-1">
@@ -106,7 +106,7 @@
       </div>
     </div>
     <!-- END Key Features -->
-
+    
     <!-- Unlimited Dashboards -->
     <div class="bg-body-extra-light">
       <div class="content content-full">
@@ -124,7 +124,7 @@
             @foreach ($companies as $company)
             <div class="col-md-4 py-2">
               <a class="options-container push text-white rounded overflow-hidden" href="{{ route('iwyno_company',['company' => $company->seo_name]) }}" target="_blank">
-                <img class="img-fluid options-item" src="{{ $company->image_url }}" alt="{{ $company->name }}">
+                <img class="img-fluid options-item" src="{{ asset($company->image_url) }}" alt="{{ $company->name }}">
                 <div class="options-overlay bg-black-50">
                   <div class="options-overlay-content h5 fw-bold text-uppercase">
                     <i class="fa fa-link fa-2x"></i>
@@ -919,10 +919,10 @@
       <div class="content py-5">
         <div class="row fs-sm">
           <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-end">
-            Crafted with <i class="fa fa-heart text-pulse"></i> by <a class="fw-semibold" href="https://1.envato.market/ydb" target="_blank">iwynoworks</a>
+            Crafted with <i class="fa fa-heart text-pulse"></i> by <a class="fw-semibold" href="#" target="_blank">iwynoworks</a>
           </div>
           <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-start">
-            <a class="fw-semibold" href="https://1.envato.market/95j" target="_blank">IwynoWorks 5.0</a> &copy; <span data-toggle="year-copy"></span>
+            <a class="fw-semibold" href="#" target="_blank">IwynoWorks</a> &copy; <span data-toggle="year-copy"></span>
           </div>
         </div>
       </div>
