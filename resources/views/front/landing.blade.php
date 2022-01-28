@@ -39,7 +39,7 @@
                And we're always looking to add bright people to our team
             </h3>
             <h3 class="h5 fw-medium text-muted mb-5">
-              Want to make a difference in the world? You are someone we would like to know. Lets see what problem we could solve by working together. Tap here to join us 
+              Want to make a difference in the world? You are someone we would like to know. Lets see what problem we could solve by working together. Tap here to <a href={{ route('iwyno_contact') }}>contact us</a>
             </h3>
             <!-- <a class="btn btn-lg btn-alt-success mb-2 py-3 px-4" href="https://1.envato.market/95j">
               <i class="fa fa-shopping-bag opacity-50 me-2"></i> Purchase IwynoWorks
@@ -67,7 +67,7 @@
                   Software development
                 </h3>
                 <p class="fw-medium text-muted mb-0">
-                  Tons of predesigned pages.
+                  We’re a team of technology and security enthusiasts who enjoy solving  problems with software. We’re firm believers in innovation.
                 </p>
               </div>
             </div>
@@ -82,7 +82,7 @@
                   Invest in innovation
                 </h3>
                 <p class="fw-medium text-muted mb-0">
-                  Super boost your Laravel based project.
+                  We invest in our team, in new technologies and every so often when we discover a good business we partner with or invest in them. We believe - change is the only constant.
                 </p>
               </div>
             </div>
@@ -97,7 +97,7 @@
                   Expertise on hand
                 </h3>
                 <p class="fw-medium text-muted mb-0">
-                  Only the latest tech under the hood.
+                  We tap into our network for  expertise, consultation, independent contracting and more.  We invite you to bring your expertise to our initiatives by joining F.I.N below.
                 </p>
               </div>
             </div>
@@ -123,7 +123,7 @@
           <div class="row g-5 py-2">
             @foreach ($companies as $company)
             <div class="col-md-4 py-2">
-              <a class="options-container push text-white rounded overflow-hidden" href="{{ route('iwyno_company',['company' => $company->seo_name]) }}" target="_blank">
+              <a class="options-container push text-white rounded overflow-hidden" href="{{ route('iwyno_company',['company' => $company->seo_name]) }}" >
                 <img class="img-fluid options-item" src="{{ asset($company->image_url) }}" alt="{{ $company->name }}">
                 <div class="options-overlay bg-black-50">
                   <div class="options-overlay-content h5 fw-bold text-uppercase">

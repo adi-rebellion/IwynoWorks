@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>@yield('title') IwynoWorks</title>
+    <title>@yield('title') iwynoworks</title>
 
     <meta name="description"
         content="ConnectChief - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
@@ -83,7 +83,7 @@
     </style> --}}
 
 <body>
-    <div id="page-loader" class="show"></div>
+    {{-- <div id="page-loader" class="show"></div> --}}
     <div id="page-container" class="page-header-fixed page-header-glass main-content-boxed">
 
         <!-- Header -->
@@ -95,7 +95,7 @@
               <!-- Logo -->
               <a class="link-fx fw-bold" href="/">
                 <!-- <i class="fa fa-fire text-primary"></i> -->
-                <span class="fs-4 text-dual">iwyno </span><span class="fs-4 text-primary" style="color: #b94600 !important;">works</span>
+                <span class="fs-4 text-dual">iwyno</span><span class="fs-4 text-primary" style="color: #b94600 !important;">works</span>
               </a>
               <!-- END Logo -->
   

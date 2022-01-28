@@ -136,43 +136,7 @@
   </div>
   <!-- END Blog and Sidebar -->
 
-  <!-- Inspiring Quotes -->
-  <div class="bg-body-dark">
-    <div class="content content-full text-center">
-      <div class="py-4">
-        <!-- Quotes Slider (.js-slider class is initialized in Helpers.jqSlick()) -->
-        <!-- For more info and examples you can check out http://kenwheeler.github.io/slick/ -->
-        <div class="js-slider slick-nav-black js-slider-enabled slick-initialized slick-slider" data-autoplay="true" data-autoplay-speed="6000">
-          <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 8428px; transform: translate3d(-3612px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 1204px;">
-            <div class="h3 fw-bold mb-2">“ Life is really simple, but we insist on making it complicated ”</div>
-            <div class="h4 fw-normal text-muted">Confucius</div>
-          </div><div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 1204px;">
-            <div class="h3 fw-bold mb-2">“ Strive not to be a success, but rather to be of value ”</div>
-            <div class="h4 fw-normal text-muted">Albert Einstein</div>
-          </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 1204px;">
-            <div class="h3 fw-bold mb-2">“ Success is where preparation and opportunity meet ”</div>
-            <div class="h4 fw-normal text-muted">Bobby Unser</div>
-          </div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" tabindex="0" style="width: 1204px;">
-            <div class="h3 fw-bold mb-2">“ Life is really simple, but we insist on making it complicated ”</div>
-            <div class="h4 fw-normal text-muted">Confucius</div>
-          </div><div class="slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" tabindex="-1" style="width: 1204px;">
-            <div class="h3 fw-bold mb-2">“ Strive not to be a success, but rather to be of value ”</div>
-            <div class="h4 fw-normal text-muted">Albert Einstein</div>
-          </div><div class="slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" tabindex="-1" style="width: 1204px;">
-            <div class="h3 fw-bold mb-2">“ Success is where preparation and opportunity meet ”</div>
-            <div class="h4 fw-normal text-muted">Bobby Unser</div>
-          </div><div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1" style="width: 1204px;">
-            <div class="h3 fw-bold mb-2">“ Life is really simple, but we insist on making it complicated ”</div>
-            <div class="h4 fw-normal text-muted">Confucius</div>
-          </div></div></div>
-          
-          
-        </div>
-        <!-- END Quotes Slider -->
-      </div>
-    </div>
-  </div>
-  <!-- END Inspiring Quotes -->
+
 </main>
 
 
