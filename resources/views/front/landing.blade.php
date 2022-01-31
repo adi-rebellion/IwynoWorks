@@ -57,6 +57,7 @@
         <div class="content content-full">
           <div class="row g-0 justify-content-center text-center py-5">
             <div class="col-xl-4">
+              <a href="{{ route('iwyno_software_development') }}">
               <div class="w-100 py-4">
                 <div class="d-inline-block bg-body-extra-light rounded p-1 mb-4">
                   <div class="d-inline-block iwyno-shine-orange rounded p-4">
@@ -70,8 +71,10 @@
                   We’re a team of technology and security enthusiasts who enjoy solving  problems with software. We’re firm believers in innovation.
                 </p>
               </div>
+              </a>
             </div>
             <div class="col-xl-4">
+              <a href="{{ route('iwyno_invest_in_innovation') }}">
               <div class="w-100 py-4">
                 <div class="d-inline-block bg-body-extra-light rounded p-1 mb-4">
                   <div class="d-inline-block iwyno-brown rounded p-4">
@@ -85,8 +88,10 @@
                   We invest in our team, in new technologies and every so often when we discover a good business we partner with or invest in them. We believe - change is the only constant.
                 </p>
               </div>
+              </a>
             </div>
             <div class="col-xl-4">
+              <a href="{{ route('iwyno_expertise_on_hand') }}">
               <div class="w-100 py-4">
                 <div class="d-inline-block bg-body-extra-light rounded p-1 mb-4">
                   <div class="d-inline-block iwyno-orange  rounded p-4">
@@ -100,6 +105,7 @@
                   We tap into our network for  expertise, consultation, independent contracting and more.  We invite you to bring your expertise to our initiatives by joining F.I.N below.
                 </p>
               </div>
+              </a>
             </div>
           </div>
         </div>
@@ -114,7 +120,7 @@
           <div class="position-relative">
             <!-- <span class="text-back">01</span> -->
             <h2 class="fw-bold mb-2 text-center">
-              Initiatives <span class="text-primary">we're a part of </span>
+              Initiatives <span  style="color:#C55A1D"s>we're a part of </span>
             </h2>
             <h3 class="h4 fw-medium text-muted text-center mb-5">
               Let your imagination build your idea with IwynoWorks.

@@ -6,6 +6,7 @@ use App\Models\IwynoCompany;
 use Illuminate\Http\Request;
 use App\Models\IwynoService;
 use App\Models\IwynoTechnology;
+use App\Models\IwynoValue;
 use App\Providers\GlobalServiceProvider;
 
 class IwynoController extends Controller
@@ -28,6 +29,19 @@ class IwynoController extends Controller
        
        
         return view('front.company',['company' => $company]);
+    }
+
+    public function iwyno_values(Request $request)
+    {
+        $values = IwynoValue::where('status','active')->get();
+       
+       
+        return view('front.values',['values' => $values]);
+    }
+
+    public function iwyno_software_development(Request $request)
+    {
+        return view('front.software-development');
     }
 
     public function iwyno_technology(Request $request)

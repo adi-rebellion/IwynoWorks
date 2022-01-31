@@ -93,7 +93,7 @@
             <!-- Left Section -->
             <div class="space-x-1 d-flex align-items-center space-x-2">
               <!-- Logo -->
-              <a class="link-fx fw-bold" href="/">
+              <a class="link-fx fw-bold" href="{{ route('root') }}">
                 <!-- <i class="fa fa-fire text-primary"></i> -->
                 <span class="fs-4 text-dual">iwyno</span><span class="fs-4 text-primary" style="color: #b94600 !important;">works</span>
               </a>
@@ -106,22 +106,31 @@
             <!-- END Left Section -->
              <!-- Right Section -->
           <div class="space-x-1">
+
+            <a class=" px-3 d-none d-sm-inline-block" href="{{ route('iwyno_values') }}" >
+             
+              <span class="ms-1 d-none d-sm-inline-block">Our Values</span>
+            </a>
+            <a class=" px-3" href="{{ route('iwyno_contact') }}">
+              
+                <span class="ms-1 d-none d-sm-inline-block">Contact</span>
+              </a> 
             <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
             {{-- <a class="btn btn-alt-secondary px-3" data-toggle="layout" data-action="dark_mode_toggle" href="javascript:void(0)">
               <i class="fad fa-burn"></i>
             </a> --}}
-            <a class=" px-3 d-none d-sm-inline-block" href="{{ route('iwyno_service') }}" >
-              {{-- <i class="fad fa-rocket opacity-50"></i> --}}
+            {{-- <a class=" px-3 d-none d-sm-inline-block" href="{{ route('iwyno_service') }}" >
+             
               <span class="ms-1 d-none d-sm-inline-block">Services</span>
             </a>
             <a class=" px-3 d-none d-sm-inline-block" href="{{ route('iwyno_technology') }}" >
-                {{-- <i class="fad fa-rocket opacity-50"></i> --}}
+               
                 <span class="ms-1 d-none d-sm-inline-block">Technologies</span>
               </a>
             <a class=" px-3" href="{{ route('iwyno_contact') }}">
-              {{-- <i class="fad fa-shopping-bag opacity-50"></i> --}}
+              
               <span class="ms-1 d-none d-sm-inline-block">Contact</span>
-            </a>
+            </a> --}}
           </div>
           <!-- END Right Section -->
   
@@ -162,6 +171,8 @@
     </script>
     <script src="{{ asset('public/cdn/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.js') }}"></script>
     <script src="{{ asset('public/cdn/assets/js/custom_utils.js') }}"> </script>
+    <script src="{{ asset('public/front-js/typewriter.js') }}"> </script>
+
     <script>
         jQuery(function() {
             Codebase.helpers(['rangeslider']);
