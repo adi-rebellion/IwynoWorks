@@ -31,7 +31,12 @@
                 Our team of software developers & architects can develop highly customized software for your institution.Our team of innovators and entrepreneurs in residence can work with you through the entire process of  <span class="fw-semibold">brainstorming</span>, <span class="fw-semibold">conceiving ideas</span>,<span class="fw-semibold">creating proof of concepts</span>,<span class="fw-semibold">wireframes</span>,<span class="fw-semibold">building an MVP (Minimum viable product) </span> and <span class="fw-semibold"> helping you through your journey in turning your idea into a startup. 
                 </span>.
               </p>
-             
+              <a class="btn iwyno-orange text-white py-2 px-2" href="{{ route('iwyno_service') }}" >
+                Services
+              </a>
+              <a class="btn iwyno-orange text-white py-2 px-2" href="{{ route('iwyno_technology') }}" >
+                Technologies 
+              </a>
             </div>
           </div>
         </div>
