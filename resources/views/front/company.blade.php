@@ -224,7 +224,7 @@
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default2" name="example-checkbox-default2">
+                    <input class="form-check-input" type="checkbox" value="" id="terms_and_con" name="terms_and_con">
                     <label class="form-check-label" for="example-checkbox-default2" style="font-size:10px;">By signing up, you are granting us permission to contact you should there be an opportunity where we or someone in our network, may need to get in contact with you regarding your areas of expertise. There is no intent whatsoever to create an employment, agency, joint venture or partnership relationship between you or us or any third party, or any other legal arrangement that would impose liability upon one party for the act or failure to act of the other party.
                     </label>
                   </div>
@@ -406,7 +406,18 @@ var fin_value = $('[name="fin_value"]').val()
 var fin_help = $('[name="fin_help"]').val()
 var fin_user_currency = $('[name="fin_user_currency"]').val()
 var fin_user_hour_rate = $('[name="fin_user_hour_rate"]').val()
-var check_hh = $('[name="check_hh"]').val()
+
+if($('#terms_and_con').is(':checked'))
+     {
+      iziToast.info({
+        title: 'Please fill all the details!',
+        message: 'Please check terms and condition',
+        position: 'topRight'
+    })
+    $('#request_button').html('<i class="fad fa-sign-in" style="color:white !important"></i> JOIN FIN NETWORK');
+            $('#request_button').attr('disabled', false);
+     }
+    
 
 
 if (fin_name == '' || fin_email == '' || fin_phone == '' ||
