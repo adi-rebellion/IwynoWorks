@@ -51,10 +51,10 @@
     <div class="row">
         <!-- Row #1 -->
         <div class="col-6 col-xl-6">
-          <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+          <a class="block block-rounded block-link-pop text-end" >
             <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
              
-              <div class="text-end">
+              <div style="margin-left:auto;margin-right:auto;">
                 <div class="fs-3 fw-semibold">Over a century of industry experience</div>
                
               </div>
@@ -62,10 +62,10 @@
           </a>
         </div>
         <div class="col-6 col-xl-6">
-          <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+          <a class="block block-rounded block-link-pop text-end" >
             <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
              
-              <div class="text-end">
+              <div style="margin-left:auto;margin-right:auto;">
                 <div class="fs-3 fw-semibold">Free consultations </div>
               
               </div>
@@ -73,10 +73,10 @@
           </a>
         </div>
         <div class="col-6 col-xl-6">
-          <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+          <a class="block block-rounded block-link-pop text-end" >
             <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
              
-              <div class="text-end">
+              <div style="margin-left:auto;margin-right:auto;">
                 <div class="fs-3 fw-semibold">Our teams cover many time zones</div>
                
               </div>
@@ -84,10 +84,10 @@
           </a>
         </div>
         <div class="col-6 col-xl-6">
-          <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+          <a class="block block-rounded block-link-pop text-end" >
             <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
                
-              <div class="text-end">
+              <div style="margin-left:auto;margin-right:auto;">
                 <div class="fs-3 fw-semibold">Discretion & Confidentiality</div>
                
               </div>
@@ -95,10 +95,10 @@
           </a>
         </div>
         <div class="col-6 col-xl-6">
-            <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+            <a class="block block-rounded block-link-pop text-end">
               <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
                
-                <div class="text-end">
+                <div style="margin-left:auto;margin-right:auto;">
                   <div class="fs-3 fw-semibold">Global reach, local presence</div>
                  
                 </div>
@@ -106,10 +106,10 @@
             </a>
           </div>
           <div class="col-6 col-xl-6">
-            <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+            <a class="block block-rounded block-link-pop text-end" >
               <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
                
-                <div class="text-end">
+                <div style="margin-left:auto;margin-right:auto;">
                   <div class="fs-3 fw-semibold">Experienced team with SMEs in many fields</div>
                  
                 </div>
@@ -117,10 +117,10 @@
             </a>
           </div>
           <div class="col-6 col-xl-6">
-            <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+            <a class="block block-rounded block-link-pop text-end" >
               <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
                
-                <div class="text-end">
+                <div style="margin-left:auto;margin-right:auto;">
                   <div class="fs-3 fw-semibold">Industry best practices
                 </div>
                  
@@ -129,10 +129,10 @@
             </a>
           </div>
           <div class="col-6 col-xl-6">
-            <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+            <a class="block block-rounded block-link-pop text-end" >
               <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
                
-                <div class="text-end">
+                <div style="margin-left:auto;margin-right:auto;">
                   <div class="fs-3 fw-semibold">Flexible engagements </div>
                  
                 </div>
@@ -140,11 +140,11 @@
             </a>
           </div>
           <div class="col-6 col-xl-6">
-            <a class="block block-rounded block-link-pop text-end" href="javascript:void(0)">
+            <a class="block block-rounded block-link-pop text-end" >
               <div class="block-content block-content-full d-sm-flex justify-content-between align-items-center border-black-op-b border-3">
                
-                <div class="text-end">
-                  <div class="fs-3 fw-semibold">100% transparency</div>
+                <div style="margin-left:auto;margin-right:auto;">
+                  <div class="fs-3 fw-semibold ">100% transparency</div>
                  
                 </div>
               </div>
@@ -173,7 +173,7 @@
             <div class="w-100 py-4">
               <div class="d-inline-block iwyno-shine-orange rounded p-1 mb-4">
                 <div class="d-inline-block iwyno-shine-orange rounded p-4">
-                    <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-research-economy-and-currency-justicon-lineal-color-justicon.png"/>
+                  <img src="https://img.icons8.com/ios/64/ffffff/science-application.png"/>
                 </div>
               </div>
               <h3 class="h4 fw-bold mb-1">
@@ -188,7 +188,7 @@
             <div class="w-100 py-4">
               <div class="d-inline-blockiwyno-shine-orange rounded p-1 mb-4">
                 <div class="d-inline-block iwyno-shine-orange rounded p-4">
-                    <img src="https://img.icons8.com/color/64/000000/design--v1.png"/>
+                  <img src="https://img.icons8.com/ios/64/ffffff/design--v1.png"/>
                 </div>
               </div>
               <h3 class="h4 fw-bold mb-1">
@@ -204,7 +204,7 @@
             <div class="w-100 py-4">
               <div class="d-inline-block iwyno-shine-orange rounded p-1 mb-4">
                 <div class="d-inline-block iwyno-shine-orange rounded p-4">
-                    <img src="https://img.icons8.com/external-filled-outline-satawat-anukul/64/000000/external-economy-economy-filled-outline-filled-outline-satawat-anukul-7.png"/>
+                  <img src="https://img.icons8.com/ios/64/ffffff/development-skill.png"/>
                 </div>
               </div>
               <h3 class="h4 fw-bold mb-1">
@@ -220,7 +220,7 @@
             <div class="w-100 py-4">
               <div class="d-inline-block iwyno-shine-orange rounded p-1 mb-4">
                 <div class="d-inline-block iwyno-shine-orange rounded p-4">
-                    <img src="https://img.icons8.com/color/64/000000/online-support.png"/>
+                  <img src="https://img.icons8.com/ios/64/ffffff/support.png"/>
                 </div>
               </div>
               <h3 class="h4 fw-bold mb-1">
