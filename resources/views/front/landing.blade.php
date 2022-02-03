@@ -102,7 +102,7 @@
                   Expertise on hand
                 </h3>
                 <p class="fw-medium text-muted mb-0">
-                  We tap into our network for  expertise, consultation, independent contracting and more.  We invite you to bring your expertise to our initiatives by joining F.I.N below.
+                  We tap into our network for  expertise, consultation, independent contracting and more.  We invite you to bring your expertise to our initiatives by joining F.I.N.
                 </p>
               </div>
               </a>

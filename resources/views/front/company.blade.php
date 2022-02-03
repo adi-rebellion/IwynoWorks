@@ -50,7 +50,7 @@
       if($company->id == 6)
       {
         ?>
-      <div class="col-xl-12">
+      <div class="col-xl-8" style="margin-left: auto;margin-right:auto;" id="joinfin">
         <!-- Floating Labels Contact -->
         <div class="block block-rounded h-100 mb-0">
           <div class="block-header block-header-default">
@@ -74,7 +74,7 @@
               <div class="mb-4">
                 <div class="col-12">
                   <div class="form-floating">
-                    <input type="text" class="form-control" id="fin_linkedin" name="fin_linkedin" placeholder="Enter your name">
+                    <input type="text" class="form-control" id="fin_linkedin" name="fin_linkedin" placeholder="Enter your name" value="https://www.linkedin.com/in/">
                     <label class="form-label" for="fin_linkedin" style="font-weight: bolder">URL to your Linkedin profile</label>
                   </div>
                 </div>
@@ -153,7 +153,7 @@
                     <option value="WY">Wyoming</option>
                   </select>
                  --}}
-                 <select id='select_multiple_skills'  name="select_multiple_skills"  
+                 <select id='select_multiple_skills'  name="fin_skills"  
                                         style="width: 100%;font-weight: bolder" data-placeholder="Your areas of expertise ..." multiple>
                                             <option value='0'>-- Select user --</option>
                                           </select>
@@ -163,19 +163,21 @@
             
               <div class="mb-4">
                 <div class="form-floating">
-                  <textarea class="form-control" id="contact2-msg" name="contact2-msg" rows="7" placeholder="Enter your message"></textarea>
-                  <label class="form-label" for="contact2-msg" style="font-weight: bolder">How can you add value to the FIN network</label>
+                  <textarea class="form-control" id="fin_value" name="fin_value" rows="7" placeholder="Enter your message"></textarea>
+                  <label class="form-label" for="fin_value" style="font-weight: bolder">How can you add value to the FIN network 
+                    (250-500 characters)</label>
                 </div>
             
               </div>
               <div class="mb-4">
                 <div class="form-floating">
-                  <textarea class="form-control" id="contact2-msg" name="contact2-msg" rows="7" placeholder="Enter your message"></textarea>
-                  <label class="form-label" for="contact2-msg" style="font-weight: bolder">How can FIN be of help to you</label>
+                  <textarea class="form-control" id="fin_help" name="fin_help" rows="7" placeholder="Enter your message"></textarea>
+                  <label class="form-label" for="fin_help" style="font-weight: bolder">How can FIN be of help to you 
+                    (250-500 characters)</label>
                 </div>
                
               </div>
-              <div class="mb-4">
+              {{-- <div class="mb-4">
                 <label class="form-label d-block" style="font-weight: bolder">Billing rate if we are to tap into you as an SME </label>
                 <div class="form-check form-check-inline">
                   <input type="radio" class="form-check-input" id="mega-gender-group-female" name="mega-gender-group">
@@ -185,25 +187,52 @@
                   <input type="radio" class="form-check-input" id="mega-gender-group-male" name="mega-gender-group">
                   <label class="form-check-label" for="mega-gender-group-male">Hourly rate</label>
                 </div>
+              </div> --}}
+              <div class="row mb-4">
+                <div class="col-6">
+                  <div class="form-floating">
+                    <select class="form-select" id="fin_user_currency" name="fin_user_currency" size="1" placeholder="Enter your subject">
+
+                      <?php
+                       $GlobalService = new GlobalService;
+                       $countries = $GlobalService->fetch_iwyno_country();
+
+                      ?>
+                       <option value="">Please select currency</option>
+                      @foreach ($countries as $country)
+                      <option value="{{ $country->id }}">{{ $country->currency_symbol }}</option>
+                      @endforeach
+                     
+                    </select>
+                    <label class="form-label" for="contact2-subject" style="font-weight: bolder">Currency 
+                      ?</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="fin_user_hour_rate" name="fin_user_hour_rate" placeholder="Enter your name">
+                    <label class="form-label" for="fin_user_hour_rate" style="font-weight: bolder">Hourly rate</label>
+                  </div>
+                </div>
               </div>
               <div class="mb-4">
                 
                 <div class="space-y-2">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default1" name="example-checkbox-default1" checked="">
-                    <label class="form-check-label" for="example-checkbox-default1">check here to allow us to create a profile for you at The Hiring Co (learn more) 
+                    <label class="form-check-label" for="example-checkbox-default1" style="font-size:10px;">check here to allow us to create a profile for you at The Hiring Co (learn more) 
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="example-checkbox-default2" name="example-checkbox-default2">
-                    <label class="form-check-label" for="example-checkbox-default2">Nothing herein shall be deemed to create an employment, agency, joint venture or partnership relationship between you or us or any third party, or any other legal arrangement that would impose liability upon one Party for the act or failure to act of the other Party. By signing up, you agree that we are independent parties and that you specifically only sharing your information and are granting us permission to contact you should there be an opportunity where we or someone who contacts us may need to get in contact with you regarding your areas of expertise. 
+                    <label class="form-check-label" for="example-checkbox-default2" style="font-size:10px;">By signing up, you are granting us permission to contact you should there be an opportunity where we or someone in our network, may need to get in contact with you regarding your areas of expertise. There is no intent whatsoever to create an employment, agency, joint venture or partnership relationship between you or us or any third party, or any other legal arrangement that would impose liability upon one party for the act or failure to act of the other party.
                     </label>
                   </div>
                   
                 </div>
               </div>
               <div class="mb-4">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" onclick="request_join()">
                   JOIN THE FIN Network
                 </button>
               </div>
@@ -225,7 +254,7 @@
     <div class="content py-5">
       <div class="row fs-sm">
         <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-end">
-          Crafted with <i class="fa fa-heart text-pulse"></i> by <a class="fw-semibold" href="#" target="_blank">iwynoworks</a>
+          Crafted with <img src="https://img.icons8.com/ios-glyphs/20/4D2D19/like--v1.png"/> by <a class="fw-semibold" href="#" target="_blank">iwynoworks</a>
         </div>
         <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-start">
           <a class="fw-semibold" href="#" target="_blank">iwynoworks</a> &copy; <span data-toggle="year-copy"></span>
@@ -239,6 +268,7 @@
   var $config = {
 
   FetchIwynoSkill: "{{ route('fetch_iwyno_skill') }}",
+  JoinFIN : "{{ route('join_fin_initiative') }}"
   
 }
 
@@ -354,5 +384,77 @@
 
      
       </script>   
+
+
+
+      <script>
+
+    function request_join()
+    {
+      var fin_name = $('[name="fin_name"]').val()
+var fin_email = $('[name="fin_email"]').val()
+var fin_phone = $('[name="fin_phone"]').val()
+var fin_linkedin = $('[name="fin_linkedin"]').val()
+var fin_user_summary = $('[name="fin_user_summary"]').val()
+var fin_country = $('[name="fin_user_country"]').val()
+var fin_city = $('[name="fin_city"]').val()
+var fin_user_link_tree = $('[name="fin_user_link_tree"]').val()
+var fin_skills = $('[name="fin_skills"]').val()
+var fin_value = $('[name="fin_value"]').val()
+var fin_help = $('[name="fin_help"]').val()
+var fin_user_currency = $('[name="fin_user_currency"]').val()
+var fin_user_hour_rate = $('[name="fin_user_hour_rate"]').val()
+var check_hh = $('[name="check_hh"]').val()
+
+
+if (fin_name == '' || fin_email == '' || fin_phone == '' ||
+fin_linkedin == '' || fin_user_summary == '' || fin_country == '' 
+ || fin_user_link_tree == '' || 
+fin_value == '' || fin_help == '' ||fin_user_currency == '' || fin_user_hour_rate == '' ) {
+    iziToast.error({
+        title: 'Please fill all the details!',
+        message: 'fields are not complete.',
+        position: 'topRight'
+    })
+}
+
+
+
+else {
+    $.post(
+        $config.JoinFIN,
+        {
+          fin_name:fin_name,
+          fin_email:fin_email,
+          fin_phone:fin_phone,
+          fin_linkedin:fin_linkedin,
+          fin_user_summary:fin_user_summary,
+          fin_country:fin_country,
+          fin_city:fin_city,
+          fin_user_link_tree:fin_user_link_tree,
+          fin_skills:fin_skills,
+          fin_value:fin_value,
+          fin_help:fin_help,
+          fin_user_currency:fin_user_currency,
+          fin_user_hour_rate:fin_user_hour_rate,
+          _token: $("[name='csrf_token']").val()
+
+
+      
+        },
+        function (result) {
+            iziToast.success({
+                title: 'Updated!',
+                message: 'fields are updated.',
+                position: 'topRight'
+            })
+        }
+    )
+      }
+    }
+
+
+
+       </script>
 
 @endsection

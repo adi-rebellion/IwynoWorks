@@ -31,10 +31,11 @@ Route::get('/invest-in-innovation', 'App\Http\Controllers\IwynoController@iwyno_
 Route::get('/expertise-on-hand', 'App\Http\Controllers\IwynoController@iwyno_values')->name('iwyno_expertise_on_hand');
 Route::get('/technologies', 'App\Http\Controllers\IwynoController@iwyno_technology')->name('iwyno_technology');
 Route::get('/technology/{tech_name}', 'App\Http\Controllers\IwynoController@iwyno_tech_page')->name('iwyno_tech_page');
-Route::get('/company/{company}', 'App\Http\Controllers\IwynoController@iwyno_company')->name('iwyno_company');
+Route::get('/in/{company}', 'App\Http\Controllers\IwynoController@iwyno_company')->name('iwyno_company');
 
 //Route::post('/captcha-validation', [CaptchaServiceController::class, 'capthcaFormValidate']);
 Route::get('/reload-captcha', 'App\Http\Controllers\CaptchaServiceController@reloadCaptcha');
 
 Route::post('/fetch/skill/', 'App\Http\Controllers\IwynoController@fetch_iwyno_skill')->name('fetch_iwyno_skill');
-Route::get('company/fetch/city/{country_id}', 'App\Http\Controllers\IwynoController@fetch_iwyno_city')->name('fetch_iwyno_city');
+Route::get('in/fetch/city/{country_id}', 'App\Http\Controllers\IwynoController@fetch_iwyno_city')->name('fetch_iwyno_city');
+Route::post('/join/fin/request', 'App\Http\Controllers\IwynoController@join_fin_initiative')->name('join_fin_initiative');

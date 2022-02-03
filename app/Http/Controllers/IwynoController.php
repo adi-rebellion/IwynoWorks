@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\IwynoCompany;
+use App\Models\IwynoFinInitiative;
 use Illuminate\Http\Request;
 use App\Models\IwynoService;
 use App\Models\IwynoTechnology;
@@ -93,6 +94,39 @@ class IwynoController extends Controller
         
                     
         return json_encode($cities);
+    }
+
+
+    public function join_fin_initiative(Request $request)
+    {
+        $request_already_exist = IwynoFinInitiative::where('user_linkedin_profile',$request->fin_linkedin)->first();
+        if(!$request_already_exist)
+        {
+            $new_join = new IwynoFinInitiative;
+            $new_join->user_name = $request->fin_name;
+            $new_join->user_email = $request->fin_email;
+            $new_join->user_phone = $request->fin_phone;
+            $new_join->user_linkedin_profile = $request->fin_linkedin;
+            $new_join->user_summary = $request->fin_user_summary;
+            $new_join->user_country =  $request->fin_country;
+            $new_join->user_city =  '$request->fin_city';
+            $new_join->user_link_tree =  $request->fin_user_link_tree;
+            $new_join->user_skill = '$request->fin_skills';
+            $new_join->user_value = $request->fin_value;
+            $new_join->user_help = $request->fin_help;
+            $new_join->user_currency =  $request->fin_user_currency;
+            $new_join->user_hourly_rate = $request->fin_user_hour_rate;
+            $new_join->check_hh = $request->check_hh;
+            $new_join->save();
+
+            return ['status' => 'success' , 'message' => 'Request submitted'];
+        }
+        else
+        {
+            return ['status' => 'error' , 'message' => 'Request already exist'];
+        }
+       
+
     }
 
    
