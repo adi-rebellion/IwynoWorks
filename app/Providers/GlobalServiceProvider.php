@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Models\JobCountry;
 
 class GlobalServiceProvider extends ServiceProvider
 {
@@ -36,6 +37,14 @@ class GlobalServiceProvider extends ServiceProvider
         $string = preg_replace('/&([a-z])(acute|uml|circ|grave|ring|cedil|slash|tilde|caron|lig|quot|rsquo);/i', '\\1', $string );
         $string = preg_replace(array('/[^a-z0-9]/i', '/[-]+/') , '-', $string);
         return strtolower(trim($string, '-'));
+    }
+
+    public function fetch_iwyno_country()
+    {
+      $countries = JobCountry::where('active',1)->get();
+      return $countries;
+     
+
     }
 
 }

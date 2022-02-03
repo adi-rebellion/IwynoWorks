@@ -22,7 +22,7 @@
     <meta property="og:image" content="">
 
     <!-- Icons -->
-    <link rel="shortcut icon" href="{{asset('front-images/ccfav.ico')}}" type="image/icon">
+    <link rel="shortcut icon" href="{{asset('public/logo/iwyno.png')}}" type="image/icon">
     <link rel="stylesheet" id="css-main"
     href="{{ asset('public/front-css/iwyno.css') }}">
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->

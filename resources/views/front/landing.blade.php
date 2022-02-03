@@ -42,7 +42,7 @@
               Want to make a difference in the world? You are someone we would like to know. Lets see what problem we could solve by working together. Tap here to <a href={{ route('iwyno_contact') }}>contact us</a>
             </h3>
             <!-- <a class="btn btn-lg btn-alt-success mb-2 py-3 px-4" href="https://1.envato.market/95j">
-              <i class="fa fa-shopping-bag opacity-50 me-2"></i> Purchase IwynoWorks
+              <i class="fa fa-shopping-bag opacity-50 me-2"></i> Purchase iwynoworks
             </a> -->
           </div>
         </div>
@@ -74,7 +74,7 @@
               </a>
             </div>
             <div class="col-xl-4">
-              <a href="{{ route('iwyno_invest_in_innovation') }}">
+              <a href="{{ route('iwyno_contact') }}">
               <div class="w-100 py-4">
                 <div class="d-inline-block bg-body-extra-light rounded p-1 mb-4">
                   <div class="d-inline-block iwyno-brown rounded p-4">
@@ -91,7 +91,7 @@
               </a>
             </div>
             <div class="col-xl-4">
-              <a href="{{ route('iwyno_expertise_on_hand') }}">
+              <a href="{{ route('iwyno_company',['company' => 'fin']) }}">
               <div class="w-100 py-4">
                 <div class="d-inline-block bg-body-extra-light rounded p-1 mb-4">
                   <div class="d-inline-block iwyno-orange  rounded p-4">
@@ -122,15 +122,13 @@
             <h2 class="fw-bold mb-2 text-center">
               Initiatives <span  style="color:#C55A1D"s>we're a part of </span>
             </h2>
-            <h3 class="h4 fw-medium text-muted text-center mb-5">
-              Let your imagination build your idea with IwynoWorks.
-            </h3>
+            
           </div>
           <div class="row g-5 py-2">
             @foreach ($companies as $company)
-            <div class="col-md-4 py-2">
+            <div class="col-md-3 py-2">
               <a class="options-container push text-white rounded overflow-hidden" href="{{ route('iwyno_company',['company' => $company->seo_name]) }}" >
-                <img class="img-fluid options-item" src="{{ asset($company->image_url) }}" alt="{{ $company->name }}">
+                <img class="img-fluid options-item" src="{{ asset($company->image_url) }}" alt="{{ $company->name }}" >
                 <div class="options-overlay bg-black-50">
                   <div class="options-overlay-content h5 fw-bold text-uppercase">
                     <i class="fa fa-link fa-2x"></i>
@@ -141,7 +139,7 @@
                {{ $company->name }}
               </h4>
               <!-- <p class="fw-medium text-muted">
-                IwynoWorks’s original dashboard design provides a clean, modern and minimal starting point for your web application.
+                iwynoworks’s original dashboard design provides a clean, modern and minimal starting point for your web application.
               </p> -->
             </div>
             @endforeach
@@ -382,7 +380,7 @@
                 Unity
               </h4>
               <p class="fw-medium text-muted mb-0">
-                IwynoWorks’s layout is really unique, adaptive and flexible. It enables you to create all kinds of pages that look great and work seamlessly across mobile and desktop devices.
+                iwynoworks’s layout is really unique, adaptive and flexible. It enables you to create all kinds of pages that look great and work seamlessly across mobile and desktop devices.
               </p>
             </div>
             <div class="col-md-4 py-3">
@@ -485,7 +483,7 @@
                 No jQuery
               </h4>
               <p class="fw-medium text-muted mb-0">
-                Bootstrap 5 and IwynoWorks are designed to be used without jQuery. It is only used for providing examples of popular plugins which are based on it.
+                Bootstrap 5 and iwynoworks are designed to be used without jQuery. It is only used for providing examples of popular plugins which are based on it.
               </p>
             </div>
           </div>
@@ -552,7 +550,7 @@
                 Preprocessor
               </h4>
               <p class="fw-medium text-muted mb-0">
-                IwynoWorks CSS framework was built with Sass following a completely modular approach. It is easy to understand, customize and extend to fulfill your needs or project’s requirements.
+                iwynoworks CSS framework was built with Sass following a completely modular approach. It is easy to understand, customize and extend to fulfill your needs or project’s requirements.
               </p>
             </div>
             <div class="col-md-4 py-3">
@@ -570,7 +568,7 @@
                 Build
               </h4>
               <p class="fw-medium text-muted mb-0">
-                Time-saving task that will build a custom, minimized and production ready IwynoWorks framework for you. Create your own variation based on your project.
+                Time-saving task that will build a custom, minimized and production ready iwynoworks framework for you. Create your own variation based on your project.
               </p>
             </div>
           </div>
@@ -594,7 +592,7 @@
               Developer <span class="text-primary">Minded</span>
             </h2>
             <h3 class="h4 fw-medium text-muted text-center mb-5">
-              We built IwynoWorks based on your valuable feedback.
+              We built iwynoworks based on your valuable feedback.
             </h3>
           </div>
           <div class="row g-6  py-2">
@@ -613,7 +611,7 @@
                 Documentation
               </h4>
               <p class="fw-medium text-muted mb-0">
-                In the package, you will find the IwynoWorks Docs which can become a valuable tool in getting familiar with the overall structure and helping you start your project faster.
+                In the package, you will find the iwynoworks Docs which can become a valuable tool in getting familiar with the overall structure and helping you start your project faster.
               </p>
             </div>
             <div class="col-md-4 py-3">
@@ -622,7 +620,7 @@
                 Clean Code
               </h4>
               <p class="fw-medium text-muted mb-0">
-                Working with someone else’s code can become uncomfortable and make you unproductive. We strive to ensure that your experience with IwynoWorks will be the exact opposite.
+                Working with someone else’s code can become uncomfortable and make you unproductive. We strive to ensure that your experience with iwynoworks will be the exact opposite.
               </p>
             </div>
           </div>
@@ -844,7 +842,7 @@
                   1100+ Font Based Icons
                 </h4>
                 <p class="fs-sm fw-medium text-muted mb-0">
-                  With so many unique icons included in IwynoWorks, you don’t have to worry about running out.
+                  With so many unique icons included in iwynoworks, you don’t have to worry about running out.
                 </p>
               </div>
               <div class="col-md-4 py-3">
@@ -908,7 +906,7 @@
                   Many Many More..
                 </h4>
                 <a class="btn btn-sm btn-alt-primary" href="be_pages_dashboard.html" target="_blank">
-                  <i class="fa fa-external-link-square-alt opacity-50 me-1"></i> Explore IwynoWorks
+                  <i class="fa fa-external-link-square-alt opacity-50 me-1"></i> Explore iwynoworks
                 </a>
               </div>
             </div>
@@ -925,10 +923,10 @@
       <div class="content py-5">
         <div class="row fs-sm">
           <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-end">
-            Crafted with <i class="fa fa-heart text-pulse"></i> by <a class="fw-semibold" href="#" target="_blank">iwynoworks</a>
+            Crafted with <img src="https://img.icons8.com/ios-glyphs/20/4D2D19/like--v1.png"/> by <a class="fw-semibold" href="#" target="_blank">iwynoworks</a>
           </div>
           <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-start">
-            <a class="fw-semibold" href="#" target="_blank">IwynoWorks</a> &copy; <span data-toggle="year-copy"></span>
+            <a class="fw-semibold" href="#" target="_blank">iwynoworks</a> &copy; <span data-toggle="year-copy"></span>
           </div>
         </div>
       </div>

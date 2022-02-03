@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use App\Models\IwynoService;
 use App\Models\IwynoTechnology;
 use App\Models\IwynoValue;
+use App\Models\JobCountry;
+use App\Models\JobSkill;
+use App\Models\JobCity;
 use App\Providers\GlobalServiceProvider;
 
 class IwynoController extends Controller
@@ -64,4 +67,34 @@ class IwynoController extends Controller
     {
         return $request->tech_name;
     }
+
+    public function fetch_iwyno_skill(Request $request)
+    {
+        $search = $request->search;
+        $data = [];
+        if($request->has('search')){
+            $search = $request->search;
+            $skill = JobSkill::orderby('name','asc')->select('name','id')
+                    ->where([
+
+                        ['name', 'like', '%' .$search . '%'],
+
+
+                        ])
+                    ->get();
+        }
+        return response()->json($skill);
+    }
+
+    public function fetch_iwyno_city(Request $request)
+    {
+        $cities = JobCity::where("country_id",$request->country_id)
+        ->pluck("name","id");
+        
+                    
+        return json_encode($cities);
+    }
+
+   
+
 }

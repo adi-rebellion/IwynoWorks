@@ -35,3 +35,6 @@ Route::get('/company/{company}', 'App\Http\Controllers\IwynoController@iwyno_com
 
 //Route::post('/captcha-validation', [CaptchaServiceController::class, 'capthcaFormValidate']);
 Route::get('/reload-captcha', 'App\Http\Controllers\CaptchaServiceController@reloadCaptcha');
+
+Route::post('/fetch/skill/', 'App\Http\Controllers\IwynoController@fetch_iwyno_skill')->name('fetch_iwyno_skill');
+Route::get('company/fetch/city/{country_id}', 'App\Http\Controllers\IwynoController@fetch_iwyno_city')->name('fetch_iwyno_city');

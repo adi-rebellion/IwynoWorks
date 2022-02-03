@@ -29,11 +29,11 @@
             </div>
             <div class="mb-4">
               <label class="form-label" for="be-contact-email">Company</label>
-              <input type="email" class="form-control form-control-lg" id="be-contact-email" name="be-contact-email" placeholder="Enter your email..">
+              <input type="email" class="form-control form-control-lg" id="be-contact-email" name="be-contact-email" placeholder="Enter your company name..">
             </div>
             <div class="mb-4">
               <label class="form-label" for="be-contact-subject">Location</label>
-              <input type="text" class="form-control form-control-lg" id="location" name="be-contact-email" placeholder="Enter your email.." readonly>
+              <input type="text" class="form-control form-control-lg" id="location" name="be-contact-email" placeholder="Your locatiob.." readonly>
             </div>
             <div class="mb-4">
                 <label class="form-label" for="be-contact-email">Email</label>
@@ -56,7 +56,7 @@
                 <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha">
             </div>
             <div class="mb-4">
-              <button type="submit" class="btn btn-alt-primary">
+              <button type="submit" class="btn btn-primary">
                 <i class="fa fa-paper-plane opacity-50 me-1"></i> Send Message
               </button>
             </div>
