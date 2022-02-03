@@ -66,7 +66,7 @@
                 <div class="col-12">
                   <div class="form-floating">
                     <input type="text" class="form-control" id="fin_name" name="fin_name" placeholder="Enter your name">
-                    <label class="form-label" for="fin_name" style="font-weight: bolder">Name</label>
+                    <label class="form-label" for="fin_name" style="font-weight: bolder">Name<sup class="text-danger">*</sup></label>
                   </div>
                 </div>
                 
@@ -75,7 +75,7 @@
                 <div class="col-12">
                   <div class="form-floating">
                     <input type="text" class="form-control" id="fin_linkedin" name="fin_linkedin" placeholder="Enter your name" value="https://www.linkedin.com/in/">
-                    <label class="form-label" for="fin_linkedin" style="font-weight: bolder">URL to your Linkedin profile</label>
+                    <label class="form-label" for="fin_linkedin" style="font-weight: bolder">URL to your Linkedin profile<sup class="text-danger">*</sup></label>
                   </div>
                 </div>
                 
@@ -84,7 +84,7 @@
                 <div class="col-12">
                   <div class="form-floating">
                     <input type="text" class="form-control" id="fin_user_summary" name="fin_user_summary" placeholder="Enter your name">
-                    <label class="form-label" for="fin_user_summary" style="font-weight: bolder">Who are you? (1 line summary highlighting your strengths)</label>
+                    <label class="form-label" for="fin_user_summary" style="font-weight: bolder">Who are you? (One sentence highlighting your strengths)<sup class="text-danger">*</sup></label>
                   </div>
                 </div>
                 
@@ -92,7 +92,7 @@
               <div class="row mb-4">
                 <div class="col-6">
                   <div class="form-floating">
-                    <select class="form-select" id="fin_user_country" name="fin_user_country" size="1" placeholder="Enter your subject">
+                    <select class="form-select" id="fin_user_country" name="fin_user_country" size="1" >
 
                       <?php
                        $GlobalService = new GlobalService;
@@ -105,15 +105,15 @@
                       @endforeach
                      
                     </select>
-                    <label class="form-label" for="contact2-subject" style="font-weight: bolder">Country?</label>
+                    <label class="form-label" for="contact2-subject" style="font-weight: bolder">Country<sup class="text-danger">*</sup></label>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="form-floating">
-                    <select class="form-select" id="fin_user_city" name="fin_user_city" size="1" placeholder="Enter your subject">
+                    <select class="form-select" id="fin_user_city" name="fin_user_city" size="1" >
                       <option value="">Please select city</option>
                     </select>
-                    <label class="form-label" for="contact2-subject" style="font-weight: bolder">City?</label>
+                    <label class="form-label" for="contact2-subject" style="font-weight: bolder">City<sup class="text-danger">*</sup></label>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@
               <div class="mb-4">
                 <div class="form-floating input-group">
                   <input type="email" class="form-control" id="fin_email" name="fin_email" placeholder="Enter your email">
-                  <label class="form-label" for="fin_email" style="font-weight: bolder">Your email    ( no we do not spam ) </label>
+                  <label class="form-label" for="fin_email" style="font-weight: bolder">Your email<sup class="text-danger">*</sup> (we hate spam)</label>
                   <span class="input-group-text">
                     <img src="{{ asset('public/animation/email.gif') }}" height="20"/>
                   </span>
@@ -130,7 +130,7 @@
               <div class="mb-4">
                 <div class="form-floating input-group">
                   <input type="tel" class="form-control" id="fin_phone" name="fin_phone" placeholder="Enter your email">
-                  <label class="form-label" for="fin_phone" style="font-weight: bolder">Phone  (just make sure you keep this current) </label>
+                  <label class="form-label" for="fin_phone" style="font-weight: bolder">Phone<sup class="text-danger">*</sup> (be sure you keep this current) </label>
                   <span class="input-group-text">
                     <img src="{{ asset('public/animation/phone.gif') }}" height="20"/>
                   </span>
@@ -138,7 +138,7 @@
               </div>
               <div class="mb-4">
                 <div class="form-floating input-group">
-                  <input type="email" class="form-control" id="fin_user_link_tree" name="fin_user_link_tree" placeholder="Enter your email">
+                  <input type="text" class="form-control" id="fin_user_link_tree" name="fin_user_link_tree" placeholder="Enter your email">
                   <label class="form-label" for="fin_user_link_tree" style="font-weight: bolder">Your Link.tree </label>
                   <span class="input-group-text">
                     <img src="{{ asset('public/animation/link.gif') }}" height="20"/>
@@ -153,9 +153,10 @@
                     <option value="WY">Wyoming</option>
                   </select>
                  --}}
+                 <label class="form-label" for="fin_user_link_tree" style="font-weight: bolder">Your areas of expertise (choose from list)</label>
                  <select id='select_multiple_skills'  name="fin_skills"  
                                         style="width: 100%;font-weight: bolder" data-placeholder="Your areas of expertise ..." multiple>
-                                            <option value='0'>-- Select user --</option>
+                                         
                                           </select>
                  
                 </div>
@@ -164,7 +165,7 @@
               <div class="mb-4">
                 <div class="form-floating">
                   <textarea class="form-control" id="fin_value" name="fin_value" rows="7" placeholder="Enter your message"></textarea>
-                  <label class="form-label" for="fin_value" style="font-weight: bolder">How can you add value to the FIN network 
+                  <label class="form-label" for="fin_value" style="font-weight: bolder">How can you add value to the FIN network?<sup class="text-danger">*</sup>
                     (250-500 characters)</label>
                 </div>
             
@@ -172,7 +173,7 @@
               <div class="mb-4">
                 <div class="form-floating">
                   <textarea class="form-control" id="fin_help" name="fin_help" rows="7" placeholder="Enter your message"></textarea>
-                  <label class="form-label" for="fin_help" style="font-weight: bolder">How can FIN be of help to you 
+                  <label class="form-label" for="fin_help" style="font-weight: bolder">How can FIN be of help to you?<sup class="text-danger">*</sup>
                     (250-500 characters)</label>
                 </div>
                
@@ -204,14 +205,14 @@
                       @endforeach
                      
                     </select>
-                    <label class="form-label" for="contact2-subject" style="font-weight: bolder">Currency 
-                      ?</label>
+                    <label class="form-label" for="contact2-subject" style="font-weight: bolder">Currency<sup class="text-danger">*</sup> 
+                      </label>
                   </div>
                 </div>
                 <div class="col-6">
                   <div class="form-floating">
                     <input type="text" class="form-control" id="fin_user_hour_rate" name="fin_user_hour_rate" placeholder="Enter your name">
-                    <label class="form-label" for="fin_user_hour_rate" style="font-weight: bolder">Hourly rate</label>
+                    <label class="form-label" for="fin_user_hour_rate" style="font-weight: bolder">Hourly rate<sup class="text-danger">*</sup></label>
                   </div>
                 </div>
               </div>
@@ -225,7 +226,7 @@
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="terms_and_con" name="terms_and_con">
-                    <label class="form-check-label" for="example-checkbox-default2" style="font-size:10px;">By signing up, you are granting us permission to contact you should there be an opportunity where we or someone in our network, may need to get in contact with you regarding your areas of expertise. There is no intent whatsoever to create an employment, agency, joint venture or partnership relationship between you or us or any third party, or any other legal arrangement that would impose liability upon one party for the act or failure to act of the other party.
+                    <label class="form-check-label" for="example-checkbox-default2" style="font-size:10px;"><sup class="text-danger">*</sup>By signing up, you are granting us permission to contact you should there be an opportunity where we or someone in our network, may need to get in contact with you regarding your areas of expertise. There is no intent whatsoever to create an employment, agency, joint venture or partnership relationship between you or us or any third party, or any other legal arrangement that would impose liability upon one party for the act or failure to act of the other party.
                     </label>
                   </div>
                   
@@ -257,7 +258,7 @@
           Crafted with <img src="https://img.icons8.com/ios-glyphs/20/4D2D19/like--v1.png"/> by <a class="fw-semibold" href="#" target="_blank">iwynoworks</a>
         </div>
         <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-start">
-          <a class="fw-semibold" href="#" target="_blank">iwynoworks</a> &copy; <span data-toggle="year-copy"></span>
+          <a class="fw-semibold"  target="_blank">iwynoworks</a> &copy; <span data-toggle="year-copy">2022</span>
         </div>
       </div>
     </div>
@@ -422,7 +423,7 @@ if($('#terms_and_con').is(':checked'))
 
 if (fin_name == '' || fin_email == '' || fin_phone == '' ||
 fin_linkedin == '' || fin_user_summary == '' || fin_country == '' 
- || fin_user_link_tree == '' || 
+ || 
 fin_value == '' || fin_help == '' ||fin_user_currency == '' || fin_user_hour_rate == '' ) {
     iziToast.error({
         title: 'Please fill all the details!',

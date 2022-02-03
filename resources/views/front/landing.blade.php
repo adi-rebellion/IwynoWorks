@@ -926,7 +926,7 @@
             Crafted with <img src="https://img.icons8.com/ios-glyphs/20/4D2D19/like--v1.png"/> by <a class="fw-semibold" href="#" target="_blank">iwynoworks</a>
           </div>
           <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-start">
-            <a class="fw-semibold" href="#" target="_blank">iwynoworks</a> &copy; <span data-toggle="year-copy"></span>
+            <a class="fw-semibold"  target="_blank">iwynoworks</a> &copy; <span data-toggle="year-copy">2022</span>
           </div>
         </div>
       </div>
