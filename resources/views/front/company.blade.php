@@ -232,7 +232,7 @@
                 </div>
               </div>
               <div class="mb-4">
-                <button type="submit" class="btn btn-primary" onclick="request_join()">
+                <button type="submit" class="btn btn-primary" id="request_button" onclick="request_join()">
                   JOIN THE FIN Network
                 </button>
               </div>
@@ -391,6 +391,8 @@
 
     function request_join()
     {
+      $('#request_button').html('<i class="fad fa-asterisk fa-spin" style="color:white !important"></i> Requesting...');
+    $('#request_button').attr('disabled', true);
       var fin_name = $('[name="fin_name"]').val()
 var fin_email = $('[name="fin_email"]').val()
 var fin_phone = $('[name="fin_phone"]').val()
@@ -416,6 +418,8 @@ fin_value == '' || fin_help == '' ||fin_user_currency == '' || fin_user_hour_rat
         message: 'fields are not complete.',
         position: 'topRight'
     })
+    $('#request_button').html('<i class="fad fa-sign-in" style="color:white !important"></i> JOIN FIN NETWORK');
+            $('#request_button').attr('disabled', false);
 }
 
 
@@ -443,11 +447,18 @@ else {
       
         },
         function (result) {
-            iziToast.success({
-                title: 'Updated!',
-                message: 'fields are updated.',
-                position: 'topRight'
-            })
+          if (result.status == 'error') {
+            right_notify('danger', result.message);
+            $('#request_button').html('<i class="fad fa-sign-in" style="color:white !important"></i> JOIN FIN NETWORK');
+            $('#request_button').attr('disabled', false);
+
+        }
+
+        if (result.status == 'success') {
+            right_notify('success', result.message);
+            setTimeout(function () { window.location.href = result.redirect }, 3000);
+
+        }
         }
     )
       }

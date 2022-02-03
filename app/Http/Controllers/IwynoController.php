@@ -109,9 +109,9 @@ class IwynoController extends Controller
             $new_join->user_linkedin_profile = $request->fin_linkedin;
             $new_join->user_summary = $request->fin_user_summary;
             $new_join->user_country =  $request->fin_country;
-            $new_join->user_city =  '$request->fin_city';
+            $new_join->user_city =  $request->fin_city;
             $new_join->user_link_tree =  $request->fin_user_link_tree;
-            $new_join->user_skill = '$request->fin_skills';
+            $new_join->user_skill = $request->fin_skills;
             $new_join->user_value = $request->fin_value;
             $new_join->user_help = $request->fin_help;
             $new_join->user_currency =  $request->fin_user_currency;
