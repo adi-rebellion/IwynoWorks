@@ -477,6 +477,7 @@ else {
         message: 'Your request is been registered successfully.',
         position: 'topRight'
     })
+    location.reload(1000);
             
 
         }
