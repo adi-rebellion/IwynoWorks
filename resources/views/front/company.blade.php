@@ -408,16 +408,15 @@ var fin_help = $('[name="fin_help"]').val()
 var fin_user_currency = $('[name="fin_user_currency"]').val()
 var fin_user_hour_rate = $('[name="fin_user_hour_rate"]').val()
 
-if($('#terms_and_con').is(':checked'))
-     {
-      iziToast.info({
-        title: 'Please fill all the details!',
-        message: 'Please check terms and condition',
-        position: 'topRight'
-    })
-    $('#request_button').html('<i class="fad fa-sign-in" style="color:white !important"></i> JOIN FIN NETWORK');
-            $('#request_button').attr('disabled', false);
-     }
+// if($('#terms_and_con').is(':checked'))
+//      {
+//       iziToast.info({
+//         title: 'Please fill all the details!',
+//         message: 'Please check terms and condition',
+//         position: 'topRight'
+//     })
+   
+//      }
     
 
 
@@ -459,16 +458,26 @@ else {
       
         },
         function (result) {
-          if (result.status == 'error') {
-            right_notify('danger', result.message);
+          if (result.status == 'already_exist') {
+            // right_notify('danger', result.message);
+            iziToast.info({
+        title: 'Info',
+        message: 'Your request already exist',
+        position: 'topRight'
+    })
             $('#request_button').html('<i class="fad fa-sign-in" style="color:white !important"></i> JOIN FIN NETWORK');
             $('#request_button').attr('disabled', false);
 
         }
 
         if (result.status == 'success') {
-            right_notify('success', result.message);
-            setTimeout(function () { window.location.href = result.redirect }, 3000);
+            // right_notify('success', result.message);
+            iziToast.success({
+        title: 'Success',
+        message: 'Your request is been registered successfully.',
+        position: 'topRight'
+    })
+            
 
         }
         }

@@ -111,7 +111,8 @@ class IwynoController extends Controller
             $new_join->user_country =  $request->fin_country;
             $new_join->user_city =  $request->fin_city;
             $new_join->user_link_tree =  $request->fin_user_link_tree;
-            $new_join->user_skill = $request->fin_skills;
+            $new_join_skills = implode(" ",$request->fin_skills);
+            $new_join->user_skill = $new_join_skills;
             $new_join->user_value = $request->fin_value;
             $new_join->user_help = $request->fin_help;
             $new_join->user_currency =  $request->fin_user_currency;
@@ -123,7 +124,7 @@ class IwynoController extends Controller
         }
         else
         {
-            return ['status' => 'error' , 'message' => 'Request already exist'];
+            return ['status' => 'already_exist' , 'message' => 'Request already exist'];
         }
        
 
