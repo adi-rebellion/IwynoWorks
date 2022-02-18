@@ -9,10 +9,11 @@
       <div class="content content-top text-center">
         <div class="py-5">
           <h1 class="fw-bold text-white mb-2">Our Values</h1>
-          <h2 class="h4 fw-normal text-white-75">We’re as 
-            <a href="" class="typewrite" data-period="2000" data-type='[ "strong", "fast-moving", "successful", "ambitious", "innovative", "scrappy", "transparent", "progressive", "inclusive", "", "", "", "", "", "" ]'>
+          <h2 class="h4 fw-normal text-white-75">We are as 
+            <a href="" class="typewrite" data-period="2000" data-type='[ "strong", "fast-moving", "successful", "ambitious", "innovative", "scrappy", "transparent", "progressive", "inclusive", "open", "professional", "deliberate", "thoughtful", "grounded", "connected" ]'>
               <span class="wrap"></span>
-            </a>
+            </a> 
+            <!-- innovative scrappy transparent progressive inclusive open professional deliberate thoughtful grounded connected -->
           a group as our weakest team member.</h2>
         </div>
       </div>
@@ -26,20 +27,19 @@
     <div class="row g-6 py-2">
 
       @foreach ($values as $value )
-      <div class="col-md-4 py-2">
-        <a class="options-container push text-white rounded overflow-hidden" >
-          <img class="img-fluid options-item" src="{{ $value->image_url }}" alt="{{ $value->head }}">
-          
-        </a>
-        <h4 class="fw-bold mb-2">
-         {{ $value->head }}
-        </h4>
-        <p class="fw-medium text-muted">
-          {{ $value->content }}
-        </p>
-      </div>
-      @endforeach
-      
+        <div class="col-md-4 py-2">
+          <a class="options-container push text-white rounded overflow-hidden" >
+            <img class="img-fluid options-item" src="{{ $value->image_url }}" alt="{{ $value->head }}">
+            
+          </a>
+          <h4 class="fw-bold mb-2">
+          {{ $value->head }}
+          </h4>
+          <p class="fw-medium text-muted">
+            {{ $value->content }}
+          </p>
+        </div>
+        @endforeach
   
       {{-- <div class="col-md-6 col-xl-4">
         <!-- Story #11 -->
@@ -123,8 +123,6 @@
   </div>
   <!-- END Blog and Sidebar -->
 
-
 </main>
-
 
 @endsection
