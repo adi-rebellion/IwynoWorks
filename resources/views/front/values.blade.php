@@ -10,7 +10,7 @@
         <div class="py-5">
           <h1 class="fw-bold text-white mb-2">Our Values</h1>
           <h2 class="h4 fw-normal text-white-75">We’re as 
-            <a href="" class="typewrite" data-period="2000" data-type='[ "strong", "fast-moving", "successful", "ambitious" ]'>
+            <a href="" class="typewrite" data-period="2000" data-type='[ "strong", "fast-moving", "successful", "ambitious", "innovative", "scrappy", "transparent", "progressive", "inclusive", "", "", "", "", "", "" ]'>
               <span class="wrap"></span>
             </a>
           a group as our weakest team member.</h2>
