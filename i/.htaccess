@@ -1,0 +1,27 @@
+RewriteEngine On
+RewriteBase /
+
+# BEGIN YOURLS
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([0-9A-Za-z\-]+)/?$ http://iwyno.works/yourls/yourls-go.php?id=$1 [L]
+RewriteRule ^([0-9A-Za-z\-]+)\+/?$ http://iwyno.works/yourls/yourls-infos.php?id=$1 [L]
+RewriteRule ^([0-9A-Za-z\-]+)\+all/?$ http://iwyno.works/yourls/yourls-infos.php?id=$1&all=1 [L]
+
+#RewriteRule ^([0-9A-Za-z]+)/?$ http://iwyno.works/yourls/yourls-go.php?id=$1 [L]
+#RewriteRule ^([0-9A-Za-z]+)\+/?$ http://iwyno.works/yourls/yourls-infos.php?id=$1 [L]
+#RewriteRule ^([0-9A-Za-z]+)\+all/?$ http://iwyno.works/yourls/yourls-infos.php?id=$1&all=1 [L]
+# END YOURLS
+
+#BEGIN YOURLS
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /i/
+#RewriteCond %{HTTPS} !=on
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^.*$ /yourls/yourls-loader.php [L]
+#</IfModule>
+# END YOURLS
